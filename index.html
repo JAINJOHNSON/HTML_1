@@ -159,7 +159,10 @@
 
         <form action="">
 
-            <div>
+           <fieldset>
+            <legend>Personal Details</legend>
+
+             <div>
                 <label for="">Full Name :</label>       <input type="text" placeholder="enter your name">
             </div>
 
@@ -183,26 +186,150 @@
                 <label for="">Preferred contace time :</label>      <input type="time">
             </div>
             <div>
-                <label for="">Age : </label>                    <input type="text">
+                <label for="">Age : </label>                    <input type="number">
             </div>
 
             <div>
-                <label for="">Portfolio Website : </label>          <input type="" placeholder="http://example.com">
+                <label for="">Portfolio Website : </label>          <input type="url" placeholder="http://example.com">
 
             </div>
 
             <div>
-                <label for="">Search a course :</label>             <input type="text"> <br>
-                <label for="">Course Suggestion : </label>          <input type="text">
+                <label for="">Search a course :</label>             
+                <input list="course_options">
+                         <datalist id = "course_options">    
+                                                    <option value="Django">Django</option>
+                                                    <option value="Mern">Mern</option>
+                                                    <option value="Testing">Testing</option>
+
+                        </datalist>
             </div>
+
+            <div>
+                <label for="">Course Suggestion : </label> 
+                <select name="" id="">
+                                                    <option value="Django">Django RestFramework</option>
+                                                    <option value="Mern">Mern Development</option>
+                                                    <option value="Testing">Testing Selenium</option>
+                </select>
+            </div>
+
+
+
+           </fieldset>
+
+            <fieldset>
+                <legend>Course Details</legend>
+                <div> 
+                    <label for="">Course</label>
+                    <select name="" id="">
+                        <optgroup label="Development">
+                            <option value="Django">Django</option>
+                        <option value="MS">MS</option>
+                        <option value="ASP">ASP</option>
+                        </optgroup>
+
+                        <optgroup label="Testing">
+                            <option value="SPRING">SPRING</option>
+                        <option value="DS">DATA SCIENCE</option>
+                        </optgroup>
+                        
+                    </select>
+                </div>
+
+                <div>
+                    <label for="">Preferred Batch: </label> 
+                                    <input type="radio" name="batch" value="Morning"> <label for="">Morning</label>
+                                    <input type="radio"name="batch" value="Afternoon"> <label for="">Afternoon</label> 
+                </div>
+                <br>
+
+                <div>
+                    <label for="">Skills you Already Know :</label> <br>
+                                    <input type="checkbox" value="Python"> <label for="">Python</label>
+                                    <input type="checkbox" value="HTML"> <label for="">HTML</label>
+                                    <input type="checkbox" value="MySQL"> <label for="">MySQL</label>
+                </div>
+                
+                <br>
+
+                <div>
+                    <label for="">Why do you want to join?</label>
+                                    <textarea name="" id="" rows="10" cols="40" placeholder="write a short message"></textarea>
+                </div>
+
+
+                <div>
+                    <label for="">Upload Your Resume</label> <input type="file">
+                </div>
+
+                <div>
+                    <label for="">Choose a profile colour:</label> <input type="color">
+                </div>
+
+                <div>
+                    <label for="">Your current confidence in programming:</label> <input type="range" min="2" max="10" value="5">
+                </div>
+
+                <div>
+                    <label for="">Registration preparation progress:</label> 
+                                    <progress min="10" max="100" value="35" >
+
+                                    </progress>
+                </div>
+
+                <div>
+                    <label for="">Sample skill level indicator:</label>
+                                    <meter value="50" min="5" max="100"></meter>
+                </div>
+
+            </fieldset>
+
 
 
         </form>
 
+        <div>
+            <input type="checkbox"> <label for="">I agree to be contacted about this course.</label>
+        </div>
+
+        <div>
+            <button type="submit">Submit Registration</button>
+            <button type="reset">ResetForm</button>
+            <button>Demobutton</button>
+        </div>
+
+
+    </section>
+
+    <section>
+        <h2>Frequently Asked Questions</h2>
+        
+         <details>
+            <summary>Do I need programming experience?</summary>
+                        <p>No. Beginners can start with the fundamentals.</p>
+                
+        </details>
+            
+        
+        <details>
+            <summary>Can I access lessons later?</summary>
+                        <p>Lesson access depends on the course arrangement.</p>
+                
+        </details>
+
+        <hr>
 
     </section>
 
 
+    <section>
+        <h2>Course Introduction</h2>
+
+        <iframe src="https://www.youtube.com/embed/Utg9TMXZrx8?si=nu2gkxSO3G9YPJr5" frameborder="20"></iframe>
+
+
+    </section>
 
 
 
